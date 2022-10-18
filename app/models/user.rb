@@ -3,6 +3,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
          has_many :comments
+         has_many :prototypes
 
   validates :name, presence: true
   validates :profile, presence: true
